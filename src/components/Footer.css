@@ -1,0 +1,54 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FF6F00; /* भगवा रंग */
+  color: #fff;
+  padding: 15px 10px;
+  font-family: "Mukta", sans-serif;
+  text-align: center;
+  z-index: 1000; /* ऊपर दिखाने के लिए */
+}
+
+.footer-marquee {
+  background-color: #FFD54F; /* हल्का केसरिया */
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll-text 12s linear infinite;
+}
+
+@keyframes scroll-text {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.footer-container {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+
+
+.footer-marquee {
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll-text 12s linear infinite;
+}
+
+@keyframes scroll-text {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.footer-container {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}

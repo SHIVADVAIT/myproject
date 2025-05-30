@@ -1,0 +1,65 @@
+.books-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile: single column */
+  gap: 24px;
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 600px) {
+  .books-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+  .books-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.book-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #e65100; /* Bhagwa dark shade */
+}
+
+.book-description {
+  color: #555;
+  flex-grow: 1;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.pdf-button {
+  display: inline-block;
+  background-color: #FF6F00; /* Bhagwa bright */
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 111, 0, 0.4);
+}
+
+.pdf-button:hover {
+  background-color: #e65100; /* Thoda dark Bhagwa hover */
+  box-shadow: 0 6px 12px rgba(230, 81, 0, 0.6);
+}

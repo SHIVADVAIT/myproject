@@ -1,0 +1,49 @@
+.guru-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.guru-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fffdf5;
+  text-align: center;
+  padding: 16px;
+}
+
+.guru-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.guru-quote {
+  margin-top: 16px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #e65100; /* Bhagwa tone */
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  line-height: 1.6;
+}
+
+/* Responsive: stack nicely on small screens */
+@media (min-width: 768px) {
+  .guru-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .guru-card {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}

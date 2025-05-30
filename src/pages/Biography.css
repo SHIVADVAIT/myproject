@@ -1,0 +1,43 @@
+/* src/components/Biography.css */
+
+.biography-container {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 16px;
+  font-family: 'Noto Serif', serif, 'Georgia', serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff8e1; /* soft cream background for spiritual warmth */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.biography-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff6f00; /* Bhagwa saffron color */
+  margin-bottom: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.biography-text {
+  font-size: 1.125rem;
+  color: #4b4b4b;
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 768px) {
+  .biography-container {
+    margin: 12px;
+    padding: 12px;
+  }
+  
+  .biography-title {
+    font-size: 1.5rem;
+  }
+  
+  .biography-text {
+    font-size: 1rem;
+  }
+}
