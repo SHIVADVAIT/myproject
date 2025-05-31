@@ -8,7 +8,7 @@ export default function Home() {
       <div className="guru-card">
         <img src={gurudevImg} alt="Gurudev" className="guru-image" />
         <p className="guru-quote">
-          गुरु कृपा से ही ये सद्विचार  और हमें और कुछ भी नहीं चाहिए।
+          गुरु कृपा से ही ये सद्विचार आया, अब हमें और कुछ भी नहीं चाहिए।
           
         </p>
       </div>
